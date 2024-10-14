@@ -1,0 +1,30 @@
+vitoria = 102
+
+switch (true){
+  case (vitoria < 10) : 
+    classificacao =  "ferro";
+    break;
+  case (vitoria > 10 && vitoria <= 20) : 
+    classificacao =  "bronze";
+    break;
+  case (vitoria > 20 && vitoria <= 50) : 
+    classificacao =  "prata";
+    break;
+  case (vitoria > 50 && vitoria <= 80) : 
+    classificacao =  "ouro";
+    break;
+  case (vitoria > 81 && vitoria <= 90) : 
+    classificacao =  "diamante";
+    break;
+   case (vitoria > 91 && vitoria <= 100) : 
+    classificacao =  "lendario";
+    break;
+  case (vitoria > 100) : 
+    classificacao =  "imortal";
+    break;
+  default :
+    classificacao = "inexistente";
+
+}
+
+console.log(`O Herói tem de saldo de ${vitoria} está no nível de ${classificacao}`);
